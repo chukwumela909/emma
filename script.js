@@ -72,7 +72,7 @@ async function registerPackage() {
     console.log(payload)
 
     try {
-        const response = await fetch("https://aloyserver.onrender.com/package/create", {
+        const response = await fetch("https://emmaserver.onrender.com/package/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -120,7 +120,7 @@ async function trackPackage() {
     console.log("i am clicked")
     const trackID = document.getElementById("track-id").value.trim();
 
-    const baseUrl = "https://aloyserver.onrender.com/package/single/";
+    const baseUrl = "https://emmaserver.onrender.com/package/single/";
 
     // Construct the full endpoint URL
     const endpoint = `${baseUrl}${trackID}`;
@@ -173,7 +173,7 @@ async function trackPackage2() {
     console.log("i am clicked")
     const trackID = document.getElementById("track-id2").value.trim();
 
-    const baseUrl = "https://aloyserver.onrender.com/package/single/";
+    const baseUrl = "https://emmaserver.onrender.com/package/single/";
 
     // Construct the full endpoint URL
     const endpoint = `${baseUrl}${trackID}`;
