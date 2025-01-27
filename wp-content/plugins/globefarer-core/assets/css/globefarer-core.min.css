@@ -4106,7 +4106,7 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
 
 .qodef-accordion-info .qodef-m-mark {
     align-items: center;
-    background-color: var(--qode-main-color);
+    background-color: #086bff !important;
     border-radius: 50%;
     color: #1b1b1b;
     display: flex;
@@ -4448,7 +4448,7 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
 }
 
 .qodef-call-to-action .qodef-m-content-mask {
-    background-color: var(--qode-main-color);
+    background-color: #086bff !important;
     padding: 59px 41px
 }
 

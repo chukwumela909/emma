@@ -131,7 +131,7 @@
     height: 100%;
     font-size: 20px;
     color: #fff;
-    background-color: var(--qode-main-color);
+    background-color: #086bff !important;
     border: 1px solid var(--qode-main-color);
     border-radius: 50%;
     overflow: hidden;
@@ -763,7 +763,7 @@
     margin: 0 0 64px 0
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
 
     #qodef-related-posts .qodef-blog article:first-child,
     #qodef-related-posts .qodef-blog article:nth-child(2) {
@@ -771,7 +771,7 @@
     }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
 
     #qodef-related-posts .qodef-blog article:first-child,
     #qodef-related-posts .qodef-blog article:nth-child(2) {
@@ -1056,7 +1056,7 @@
     margin-left: auto
 }
 
-@media (min-width:681px) {
+@media (min-width: 681px) {
     #qodef-page-footer-bottom-area-inner .qodef-alignment--space-between .qodef-grid-item:nth-child(2) {
         text-align: right
     }
@@ -1389,11 +1389,7 @@
 
 #qodef-page-header-inner.qodef-skin--light nav>ul>li::before,
 .qodef-custom-header-layout.qodef-skin--light nav>ul>li::before {
-    background: #086bff !important
-}
-
-#qodef-page-header-inner.qodef-skin--light nav>ul>li.current-menu-ancestor::before,#qodef-page-header-inner.qodef-skin--light nav>ul>li.current-menu-item::before,.qodef-custom-header-layout.qodef-skin--light nav>ul>li.current-menu-ancestor::before,.qodef-custom-header-layout.qodef-skin--light nav>ul>li.current-menu-item::before {
-    background: #086bff !important
+    background: var(--qode-header-light-hover-color) !important
 }
 
 #qodef-page-header-inner.qodef-skin--light nav>ul>li>a,
@@ -1405,7 +1401,7 @@
 #qodef-page-header-inner.qodef-skin--light nav>ul>li.current-menu-item::before,
 .qodef-custom-header-layout.qodef-skin--light nav>ul>li.current-menu-ancestor::before,
 .qodef-custom-header-layout.qodef-skin--light nav>ul>li.current-menu-item::before {
-    background: #086bff !important
+    background: var(--qode-header-light-hover-color) !important
 }
 
 #qodef-page-header-inner.qodef-skin--light .qodef-opener-icon.qodef-source--icon-pack:not(.qodef--opened),
@@ -1419,7 +1415,7 @@
 
 #qodef-page-header-inner.qodef-skin--dark nav>ul>li::before,
 .qodef-custom-header-layout.qodef-skin--dark nav>ul>li::before {
-    background: #086bff !important
+    background: var(--qode-header-dark-hover-color) !important
 }
 
 #qodef-page-header-inner.qodef-skin--dark nav>ul>li>a,
@@ -1512,7 +1508,7 @@
 
 #qodef-page-header-inner.qodef-skin--light .qodef-header-logo-link.qodef-source--svg-path:hover,
 #qodef-page-header-inner.qodef-skin--light .qodef-header-logo-link.qodef-source--textual:hover {
-    color: #086BFF !important
+    color: var(--qode-header-light-hover-color) !important
 }
 
 #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link img.qodef--light,
@@ -2406,7 +2402,7 @@
 
 .qodef-fullscreen-menu--opened #qodef-page-mobile-header .qodef-mobile-header-logo-link.qodef-source--svg-path:hover,
 .qodef-fullscreen-menu--opened #qodef-page-mobile-header .qodef-mobile-header-logo-link.qodef-source--textual:hover {
-    color: #086BFF !important
+    color: var(--qode-header-light-hover-color) !important
 }
 
 .qodef-mobile-header--standard #qodef-page-mobile-header-inner {
@@ -3570,13 +3566,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 50%
 }
 
-@media only screen and (min-width:681px) {
+@media only screen and (min-width: 681px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--2.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--2.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
@@ -3586,13 +3582,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 33.33333%
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width: 769px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--3.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--3.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
@@ -3602,13 +3598,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 25%
 }
 
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width: 1025px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--4.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--4.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
@@ -3618,13 +3614,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 20%
 }
 
-@media only screen and (min-width:1367px) {
+@media only screen and (min-width: 1367px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--5.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(5n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--5.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(5n+1) {
         clear: both
     }
@@ -3634,13 +3630,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 16.66667%
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--6.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(6n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--6.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(6n+1) {
         clear: both
     }
@@ -3650,13 +3646,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 14.28571%
 }
 
-@media only screen and (min-width:1367px) {
+@media only screen and (min-width: 1367px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--7.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(7n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--7.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(7n+1) {
         clear: both
     }
@@ -3666,13 +3662,13 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
     width: 12.5%
 }
 
-@media only screen and (min-width:1367px) {
+@media only screen and (min-width: 1367px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--8.qodef-responsive--predefined #ctf .ctf-tweets>.ctf-item:nth-child(8n+1) {
         clear: both
     }
 }
 
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width: 1441px) {
     .qodef-twitter-list.qodef-layout--columns.qodef-col-num--8.qodef-responsive--custom #ctf .ctf-tweets>.ctf-item:nth-child(8n+1) {
         clear: both
     }
@@ -4217,7 +4213,7 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
 
 .qodef-accordion-info .qodef-m-mark {
     align-items: center;
-    background-color: #086BFF !important;
+    background-color: #086bff !important;
     border-radius: 50%;
     color: #1b1b1b;
     display: flex;
@@ -4532,7 +4528,7 @@ rs-layer .qodef-m-order-tracking-submit .qodef-m-button-text {
 
 .qodef-button.qodef-layout--textual .qodef-m-button-icon {
     align-items: center;
-    background-color: #086bff !important;
+    background-color: var(--qode-main-color);
     border-radius: 50%;
     display: flex;
     flex-shrink: 0;
@@ -8124,25 +8120,25 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     color: #fff
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-background-text .qodef-m-background-text {
         font-size: 135px
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-background-text .qodef-m-background-text {
         display: none !important
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-blog.qodef-item-layout--divided article .qodef-e-content {
         padding: 2.5% 0 4.5% 2.25%
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-blog.qodef-item-layout--divided article .qodef-e-inner {
         flex-direction: column
     }
@@ -8161,7 +8157,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     #qodef-author-info .qodef-m-inner {
         flex-wrap: wrap
     }
@@ -8171,7 +8167,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-fullscreen-menu>ul {
         min-width: initial;
         width: 100%;
@@ -8191,19 +8187,19 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     body:not(.qodef-content-behind-header) #qodef-page-outer {
         margin-top: 0 !important
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     #qodef-top-area {
         display: none
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-contact-form-7 .qodef-m-input-holder.qodef--one-third {
         width: 100%
     }
@@ -8248,199 +8244,199 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(5n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width: 1366px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width: 1366px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width: 1366px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width: 1366px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(4n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(3n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item:nth-child(2n+1) {
         clear: both
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-twitter-list.qodef-responsive--predefined.qodef-col-num--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
@@ -8470,13 +8466,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8486,7 +8482,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8496,7 +8492,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8506,7 +8502,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8516,7 +8512,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8526,7 +8522,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8536,7 +8532,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8546,13 +8542,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8562,7 +8558,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8572,7 +8568,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8582,7 +8578,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8592,7 +8588,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8602,7 +8598,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8612,7 +8608,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8622,13 +8618,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8638,7 +8634,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8648,7 +8644,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8658,7 +8654,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8668,7 +8664,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8678,7 +8674,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8688,7 +8684,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:1367px) {
+@media only screen and (max-width: 1440px) and (min-width:1367px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1440--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8698,13 +8694,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8714,7 +8710,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8724,7 +8720,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8734,7 +8730,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8744,7 +8740,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8754,7 +8750,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8764,7 +8760,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1366px) and (min-width:1025px) {
+@media only screen and (max-width: 1366px) and (min-width:1025px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1366--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8774,13 +8770,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8790,7 +8786,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8800,7 +8796,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8810,7 +8806,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8820,7 +8816,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8830,7 +8826,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8840,7 +8836,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width:769px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--1024--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8850,13 +8846,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8866,7 +8862,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8876,7 +8872,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8886,7 +8882,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8896,7 +8892,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8906,7 +8902,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8916,7 +8912,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) and (min-width:681px) {
+@media only screen and (max-width: 768px) and (min-width:681px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--768--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -8926,13 +8922,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
@@ -8942,7 +8938,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
@@ -8952,7 +8948,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
@@ -8962,7 +8958,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
@@ -8972,7 +8968,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
@@ -8982,7 +8978,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
@@ -8992,7 +8988,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) and (min-width:481px) {
+@media only screen and (max-width: 680px) and (min-width:481px) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--680--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
@@ -9002,55 +8998,55 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--1.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 100%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--2.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 50%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--3.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 33.33333%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--4.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 25%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--5.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 20%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--6.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 16.66667%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--7.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 14.28571%
     }
 }
 
-@media only screen and (max-width:480px) and (min-width:0) {
+@media only screen and (max-width: 480px) and (min-width:0) {
     .qodef-twitter-list.qodef-responsive--custom.qodef-col-num--480--8.qodef-layout--columns #ctf .ctf-tweets>.ctf-item {
         width: 12.5%
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-twitter-list.qodef-gutter--ultra-large.qodef--no-bottom-space {
         margin-bottom: -50px
     }
@@ -9091,7 +9087,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
 
     .qodef-career-table table td.career-position,
     .qodef-career-table table th.career-position {
@@ -9118,7 +9114,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-career-table table tr {
         display: flex;
         flex-direction: column
@@ -9138,7 +9134,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-team-single .qodef-team-right-info .qodef-team-member-info-item {
         flex-direction: column;
         align-items: baseline
@@ -9149,13 +9145,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-accordion-info.qodef-layout--extended-compact .qodef-m-text {
         padding: 0 calc(5% + 44px) 18px 35.5%
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-accordion-info.qodef-layout--extended-compact .qodef-m-heading {
         display: none
     }
@@ -9179,13 +9175,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-accordion-info.qodef-layout--extended .qodef-m-text {
         padding: 0 calc(5% + 44px) 18px 35.5%
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-accordion-info.qodef-layout--extended .qodef-m-heading {
         display: none
     }
@@ -9209,7 +9205,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-accordion-info.qodef-layout--standard .qodef-m-tagline {
         padding: 3px 0 21px 0
     }
@@ -9219,19 +9215,19 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-contact-info.qodef-layout--type-1.qodef-boxed-content--on {
         padding: 40px 25px
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-contact-info.qodef-layout--type-1.qodef-boxed-content--on {
         padding: 30px 20px
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-contact-info.qodef-layout--type-2 .qodef-m-address-email {
         flex-direction: column
     }
@@ -9252,7 +9248,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-contact-info.qodef-layout--type-3 .qodef-m-phone-address {
         flex-direction: column
     }
@@ -9273,19 +9269,19 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1680px) {
+@media only screen and (max-width: 1680px) {
     .qodef-content-slider~.swiper-button-next {
         width: 6% !important
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-content-slider~.swiper-button-next {
         width: 8% !important
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-content-slider {
         width: 100% !important
     }
@@ -9295,7 +9291,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-content-slider.qodef-item-layout--standard .qodef-e-tagline {
         font-size: 12px
     }
@@ -9305,7 +9301,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-countdown {
         margin-bottom: -40px
     }
@@ -9316,13 +9312,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-countdown .qodef-digit-wrapper {
         width: 100%
     }
 }
 
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width: 1366px) {
     .qodef-divided-image-info .qodef-m-image {
         align-self: center
     }
@@ -9336,7 +9332,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-divided-image-info.qodef-breakpoint--1024 {
         flex-direction: column
     }
@@ -9354,7 +9350,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-divided-image-info.qodef-breakpoint--768 {
         flex-direction: column
     }
@@ -9372,25 +9368,25 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-divided-image-info.qodef-layout--image-right.qodef-breakpoint--1024 {
         flex-direction: column-reverse
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-divided-image-info.qodef-layout--image-right.qodef-breakpoint--768 {
         flex-direction: column-reverse
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     .qodef-divided-info-section .qodef-e-title {
         width: 32.5%
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-divided-info-section {
         flex-direction: column
     }
@@ -9414,7 +9410,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-divided-info-section .qodef-e-content {
         flex-wrap: wrap
     }
@@ -9431,25 +9427,25 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-highlight.qodef-title-break--disabled .qodef-m-title br {
         display: none
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-scrolling-tiles-inner {
         width: 450% !important
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-section-title.qodef-title-break--disabled .qodef-m-title br {
         display: none
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-tabbed-info .ui-tabs-nav {
         align-items: flex-start;
         flex-direction: column;
@@ -9463,7 +9459,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-tabbed-info.qodef-layout--compact .qodef-m-content-inner {
         flex-direction: column
     }
@@ -9482,7 +9478,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-tabbed-info.qodef-layout--standard .qodef-m-content {
         padding: 0;
         flex-direction: column
@@ -9507,7 +9503,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     .qodef-vertical-split-slider.qodef-disable-below--1024 {
         display: none
     }
@@ -9530,7 +9526,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .qodef-vertical-split-slider.qodef-disable-below--768 {
         display: none
     }
@@ -9553,7 +9549,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
 
     .qodef-vertical-split-slider .qodef-m-label-holder,
     .qodef-vertical-split-slider-responsive .qodef-m-label-holder {
@@ -9574,7 +9570,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-social-share.qodef-layout--dropdown.qodef-dropdown--right .qodef-social-share-dropdown li:nth-child(1) {
         left: 1px
     }
@@ -9644,7 +9640,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     #qodef-page-spinner.qodef-layout--globefarer .qodef-m-globefarer {
         transform: translateX(-36px)
     }
@@ -9663,13 +9659,13 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     body:not(.qodef-content-behind-header) .qodef-page-title .qodef-m-content {
         padding-top: 0 !important
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .qodef-page-title.qodef-title--standard-with-breadcrumbs .qodef-m-content {
         align-items: flex-start;
         flex-direction: column;
@@ -9681,7 +9677,7 @@ html.elementor-html .qodef-uncovering-section .elementor-section-wrap>.elementor
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
     #qodef-page-sidebar .qodef-social-icons-group {
         justify-content: flex-start
     }
