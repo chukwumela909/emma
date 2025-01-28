@@ -32,7 +32,7 @@ async function registerPackage() {
 
     if (!senderName || !senderEmail || !senderPhone || !senderLocation ||
         !receiverName || !receiverEmail || !receiverPhone || 
-        !receiverLocation || !deliveryMode || !contentName || !contentWeight || !deliveryStatus ||  !trackingId || currentLocation) {
+        !receiverLocation || !deliveryMode || !contentName || !contentWeight || !deliveryStatus ||  !trackingId || !currentLocation) {
         return Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -80,7 +80,7 @@ const payload = {
     console.log(payload)
 
     try {
-        const response = await fetch("https://emmaserver.onrender.com/package/create", {
+        const response = await fetch("http://localhost:1200/package/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -239,6 +239,57 @@ function populatePackageInfo() {
         document.getElementById('content-name').innerText = packageInfo.contentName;
         document.getElementById('delivery-status').innerText = packageInfo.deliveryStatus;
         document.getElementById('delivery-mode').innerText = packageInfo.deliveryMode;
+        document.getElementById('current-location').innerText = packageInfo.currentLocation;
+
+
+
+
+
+
+
+
+        const container = document.querySelector(".checkpoints-container");
+
+        // Function to create a checkpoint element
+        function createCheckpoint(description) {
+          const checkpointDiv = document.createElement("div");
+          checkpointDiv.className = "checkpoint"; // Base class
+      
+          // Icon
+          const iconDiv = document.createElement("div");
+          iconDiv.className = "icon";
+          iconDiv.innerHTML = '<i class="fas fa-check"></i>'; // Default icon
+          checkpointDiv.appendChild(iconDiv);
+      
+          // Info
+          const infoDiv = document.createElement("div");
+          infoDiv.className = "info";
+          const title = document.createElement("h4");
+          title.textContent = description; // Use the full string
+          infoDiv.appendChild(title);
+          checkpointDiv.appendChild(infoDiv);
+      
+          return checkpointDiv;
+        }
+      
+        // Add checkpoints dynamically (up to 4 or fewer)
+        for (let i = 1; i <= 4; i++) {
+          const checkpointKey = `checkpoint${i}`;
+          if (packageInfo[checkpointKey]) {
+            const description = packageInfo[checkpointKey];
+            const checkpointElement = createCheckpoint(description);
+            container.appendChild(checkpointElement);
+          }
+        }
+      
+        // Fallback if no checkpoints exist
+        if (container.children.length === 0) {
+          const noDataMessage = document.createElement("p");
+          noDataMessage.textContent = "No checkpoints available for this package.";
+          container.appendChild(noDataMessage);
+        }
+
+
     } else {
         // Handle case where no package information is found
         document.getElementById('package-info').innerText = 'No package information found.';
@@ -246,6 +297,80 @@ function populatePackageInfo() {
 }
 
 
+
+// Function to generate and download the receipt
+function generateReceipt() {
+    // Retrieve the package information from local storage
+    const packageInfo = JSON.parse(localStorage.getItem('packageTracking'));
+
+    if (!packageInfo) {
+        return Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "No package information found.",
+        });
+    }
+
+    // Create a new jsPDF instance
+    const doc = new jspdf.jsPDF();
+
+    // Add title
+    doc.setFontSize(20);
+    doc.text("Delivery Receipt", 10, 20);
+
+    // Add package details
+    doc.setFontSize(12);
+    let y = 30; // Starting Y position for text
+    const lineHeight = 10;
+
+    const details = [
+        `Tracking ID: ${packageInfo.trackingId}`,
+        `Sender Name: ${packageInfo.senderName}`,
+        `Sender Email: ${packageInfo.senderEmail}`,
+        `Sender Phone: ${packageInfo.senderPhone}`,
+        `Sender Location: ${packageInfo.senderLocation}`,
+        `Receiver Name: ${packageInfo.receiverName}`,
+        `Receiver Email: ${packageInfo.receiverEmail}`,
+        `Receiver Phone: ${packageInfo.receiverPhone}`,
+        `Receiver Location: ${packageInfo.receiverLocation}`,
+        `Delivery Mode: ${packageInfo.deliveryMode}`,
+        `Content Name: ${packageInfo.contentName}`,
+        `Content Weight: ${packageInfo.contentWeight}`,
+        `Delivery Status: ${packageInfo.deliveryStatus}`,
+        `Current Location: ${packageInfo.currentLocation}`,
+    ];
+
+    details.forEach((detail) => {
+        doc.text(detail, 10, y);
+        y += lineHeight;
+    });
+
+    // Add checkpoints
+    y += lineHeight; // Add some space
+    doc.text("Checkpoints:", 10, y);
+    y += lineHeight;
+
+    for (let i = 1; i <= 4; i++) {
+        const checkpointKey = `checkpoint${i}`;
+        if (packageInfo[checkpointKey]) {
+            doc.text(`Checkpoint ${i}: ${packageInfo[checkpointKey]}`, 10, y);
+            y += lineHeight;
+        }
+    }
+
+    // Add "Delivered" stamp if status is delivered
+    if (packageInfo.deliveryStatus.toLowerCase() === "delivered") {
+        doc.setFontSize(30);
+        doc.setTextColor(255, 0, 0); // Red color
+        doc.text("DELIVERED", 100, y + 20, { angle: 45 }); // Rotated stamp
+    }
+
+    // Save the PDF
+    doc.save("delivery_receipt.pdf");
+}
+
+// Attach the function to the button
+document.getElementById("download-receipt").addEventListener("click", generateReceipt);
 
 
 
