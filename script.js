@@ -22,11 +22,17 @@ async function registerPackage() {
     const contentWeight = document.getElementById("content-weight").value.trim();
     const deliveryStatus = document.getElementById("delivery-status").value.trim();
     const trackingId = document.getElementById("tracking-id").value.trim();
+    const currentLocation = document.getElementById("current-location").value.trim();
+    const checkpoint1 = document.getElementById("checkpoint-1").value.trim();
+    const checkpoint2 = document.getElementById("checkpoint-2").value.trim();
+    const checkpoint3 = document.getElementById("checkpoint-3").value.trim();
+    const checkpoint4 = document.getElementById("checkpoint-4").value.trim();
+    const checkpoints = [checkpoint1, checkpoint2, checkpoint3, checkpoint4].filter(cp => cp !== "");
 
 
     if (!senderName || !senderEmail || !senderPhone || !senderLocation ||
         !receiverName || !receiverEmail || !receiverPhone || 
-        !receiverLocation || !deliveryMode || !contentName || !contentWeight || !deliveryStatus ||  !trackingId) {
+        !receiverLocation || !deliveryMode || !contentName || !contentWeight || !deliveryStatus ||  !trackingId || currentLocation) {
         return Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -53,21 +59,23 @@ async function registerPackage() {
     }
 
     // Construct the payload
-    const payload = {
-        trackingId,
-        senderName,
-        senderEmail,
-        senderPhone,
-        senderLocation,
-        receiverName,
-        receiverEmail,
-        receiverPhone,
-        receiverLocation,
-        deliveryMode,
-        contentName,
-        contentWeight,
-        deliveryStatus,     
-    };
+const payload = {
+    trackingId,
+    senderName,
+    senderEmail,
+    senderPhone,
+    senderLocation,
+    receiverName,
+    receiverEmail,
+    receiverPhone,
+    receiverLocation,
+    deliveryMode,
+    contentName,
+    contentWeight,
+    deliveryStatus,
+    currentLocation,
+    ...checkpoints.reduce((acc, checkpoint, index) => ({ ...acc, [`checkpoint${index + 1}`]: checkpoint }), {})
+};
     showLoader()
     console.log(payload)
 
@@ -109,10 +117,6 @@ async function registerPackage() {
             text: "An error occurred while sending the request. Please try again.",
         });
     }
-
-
-
-
 }
 
 
